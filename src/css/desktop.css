@@ -78,6 +78,11 @@ main {
 
 .hero .hero__content {
   margin: 118px 135px;
+  background: linear-gradient(
+    83.06deg,
+    #111111 11.91%,
+    rgba(17, 17, 17, 0) 73.11%
+  );
 }
 
 .hero .hero__content .hero__content-stars {
