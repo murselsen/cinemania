@@ -66,6 +66,7 @@ main {
 }
 
 .hero .hero__content {
+  width: 100%;
   padding: 118px 135px;
   background: linear-gradient(
     83.06deg,
