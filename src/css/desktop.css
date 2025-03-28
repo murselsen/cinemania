@@ -63,6 +63,7 @@ main {
   height: 720px;
   box-sizing: border-box;
   /* box-sizing: content-box; */
+  overflow: hidden;
   border: 2px solid #fada;
 }
 
