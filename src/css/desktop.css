@@ -57,8 +57,9 @@ main {
 }
 
 .hero {
+  po
   width: 100%;
-  height: ;
+  height: 720px;
   padding: 118px 135px;
 }
 .hero .hero__content .hero__content-stars {
