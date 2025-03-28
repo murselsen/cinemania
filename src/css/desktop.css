@@ -91,3 +91,11 @@ main {
   display: flex;
   gap: 5px;
 }
+.hero .hero__content .hero__content-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
