@@ -58,6 +58,7 @@ header {
 .star {
   width: 24px;
   height: 24px;
+  display: block;
   background-repeat: no-repeat;
   background-image: url('../img/star.svg');
 }
