@@ -47,4 +47,6 @@ header {
   vertical-align: middle;
   text-transform: uppercase;
 }
-.nav .nav__menu .nav__menu-link 
+.nav .nav__menu .nav__menu-link :hover {
+  color: orange;
+}
