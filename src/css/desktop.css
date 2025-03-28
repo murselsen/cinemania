@@ -30,7 +30,7 @@ header {
   vertical-align: middle;
 }
 
-.nav .nav__menu {
+.nav .nav__menu-list {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -47,3 +47,4 @@ header {
   vertical-align: middle;
   text-transform: uppercase;
 }
+.nav .nav__menu .nav__menu-link 
