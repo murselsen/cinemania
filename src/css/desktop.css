@@ -75,6 +75,7 @@ main {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  
 }
 
 .hero .hero__content {
