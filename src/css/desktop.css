@@ -76,9 +76,9 @@ main {
   background-position: center;
 }
 
-/* .hero .hero__content {
+.hero .hero__content {
   margin: 118px 135px;
-} */
+}
 
 .hero .hero__content .hero__content-stars {
   display: flex;
