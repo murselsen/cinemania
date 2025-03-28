@@ -69,7 +69,8 @@ main {
 
 .hero .hero__content {
   height: 100%;
-  padd
+  padding-top: 118px;
+  padding-left: 135px;
   background: linear-gradient(
     83.06deg,
     #111111 11.91%,
