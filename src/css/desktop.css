@@ -75,8 +75,21 @@ main {
   background-size: cover;
   background-position: center;
 }
+
+.hero .hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 .hero .hero__content .hero__content-stars {
   display: flex;
   gap: 5px;
-  
+
 }
