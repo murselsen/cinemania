@@ -55,6 +55,10 @@ header {
   color: orange;
 }
 
+main {
+  width: 100%;
+}
+
 .hero {
   border: 5px solid #fff;
   width: 100%;
