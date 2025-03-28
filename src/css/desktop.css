@@ -71,7 +71,7 @@ main {
   top: 0;
   right: 0;
   height: 100%;
-  scale: crop(0.5);
+  scale: Crop;
   z-index: -1;
 }
 
