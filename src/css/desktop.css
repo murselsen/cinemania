@@ -29,4 +29,13 @@ header {
   text-align: center;
   vertical-align: middle;
 }
-.nav .nav__
+.nav .nav__menu .nav__menu-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
