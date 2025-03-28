@@ -55,18 +55,3 @@ header {
   color: orange;
 }
 
-.star {
-  width: 24px;
-  height: 24px;
-  display: block;
-  background-repeat: no-repeat;
-}
-.star.star {
-  background-image: url('../img/star.svg');
-}
-.star.star-half {
-  background-image: url('../img/star-half.svg');
-}
-.star.star-outline {
-  background-image: url('../img/star-outline.svg');
-}
