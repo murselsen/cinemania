@@ -29,6 +29,14 @@ header {
   text-align: center;
   vertical-align: middle;
 }
+
+.nav .nav__menu {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav .nav__menu .nav__menu-link {
   font-family: Roboto;
   font-weight: 500;
