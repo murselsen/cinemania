@@ -14,5 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.nav .nav__logo{
-  }
+.nav .nav__logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
