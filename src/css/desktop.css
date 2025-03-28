@@ -62,6 +62,7 @@ main {
 .hero {
   border: 5px solid #fff;
   width: 100%;
+  padding: ;
 }
 .hero .hero__content .hero__content-stars {
   display: flex;
