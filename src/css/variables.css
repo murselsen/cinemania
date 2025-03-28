@@ -3,8 +3,10 @@
 }
 [data-theme='dark'] {
   --bg: #000;
+  --text: #fff;
 }
 
 [data-theme='light'] {
   --bg: #fff;
+  --text: #000;
 }
