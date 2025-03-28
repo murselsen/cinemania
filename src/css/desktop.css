@@ -54,3 +54,7 @@ header {
 .nav .nav__menu .nav__menu-link:where(.active) {
   color: orange;
 }
+
+.star {
+  background-image: url();
+}
