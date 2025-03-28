@@ -51,6 +51,6 @@ header {
   color: orange;
 }
 
-.nav .nav__menu .nav__menu-link:hover {
+.nav .nav__menu .nav__menu-link:where(.active) {
   color: orange;
 }
