@@ -9,14 +9,6 @@
 
 @import url('./variables.css');
 
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @import url('./desktop.css');
 @import url('./tablet.css');
 @import url('./mobile.css');
