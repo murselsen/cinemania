@@ -81,7 +81,7 @@ main {
 .hero .hero__content-background {
   position: absolute;
   top: 0;
-  right: -250px;
+  right: -150px;
 
   height: 100%;
   z-index: -1;
