@@ -55,6 +55,6 @@ header {
   color: orange;
 }
 
-.hero__content .hero__conetnt-stars {
+.hero .hero__content .hero__conetnt-stars {
   display: flex;
 }
