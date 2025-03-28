@@ -55,9 +55,10 @@ header {
   color: orange;
 }
 
-
-
-.
+.hero {
+  border: 5px solid #fff;
+  width: 100%;
+}
 .hero .hero__content .hero__content-stars {
   display: flex;
   gap: 5px;
