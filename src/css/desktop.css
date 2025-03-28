@@ -64,5 +64,6 @@ header {
 .star.star {
   background-image: url('../img/star.svg');
 }
-
-
+.star.star-half {
+  background-image: url('../img/star-half.svg');
+}
