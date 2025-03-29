@@ -75,9 +75,9 @@ main {
   background: linear-gradient(
     83.16deg,
     #111111 36.85%,
-    rgba(17, 17, 17, 0) 60.05%
-  );
 
+  );
+box
   filter: drop-shadow(2px 4px 6px black);
 }
 
