@@ -155,3 +155,10 @@ main {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+.stand__area .stand__area-header .stand__area-header-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
