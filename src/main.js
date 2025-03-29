@@ -19,11 +19,10 @@ const getWeeklyTrends = () => {
       axios
         .request(options)
         .then(res => {
-          console.log(res.data);
-          console.log('getWeeklyTrends Success:', res.data.results);
-          console.log(
+          /* console.log(
             'https://image.tmdb.org/t/p/w500' + res.data.results[0].poster_path
-          );
+          ); */
+          resolve(res.data.results);
         })
         .catch(err => console.error(err));
     } catch (error) {
@@ -32,4 +31,4 @@ const getWeeklyTrends = () => {
   });
 };
 
-getWeeklyTrends();
+const weeklyTrends = getWeeklyTrends();
