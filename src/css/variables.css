@@ -1,9 +1,10 @@
 :root {
   --bg: #fff;
-  --orange : #f87719;
-  --black : #111111;
-  --dark-grey : #282828;
-  
+  --orange: #f87719;
+  --black: #111111;
+  --dark-grey: #282828;
+  --grey: #595959;
+  --light-grey: #d9d9d9;
 }
 [data-theme='dark'] {
   --bg: #000;
