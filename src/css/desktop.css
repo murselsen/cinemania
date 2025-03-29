@@ -102,7 +102,7 @@ main {
   object-fit: cover;
   object-position: 200px;
 }
-/* Title */
+/* Hero Title */
 .hero .hero__content .hero__content-title {
   font-family: Roboto;
   font-weight: 700;
@@ -113,7 +113,7 @@ main {
   width: 670px;
   margin-bottom: 16px;
 }
-/* Stars */
+/* Hero Stars */
 .hero .hero__content .hero__content-stars {
   display: flex;
   gap: 5px;
