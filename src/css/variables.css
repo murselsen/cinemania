@@ -9,6 +9,7 @@
   --white: #ffffff;
   --o: #f84119;
   --y: #ffc226;
+  --linear-y-o: linear-gradient(141.22deg, var(--y) 9.4%, var(--o) 91.91%);
   --linear-o-y: linear-gradient(141.22deg, var(--y) 9.4%, var(--o) 91.91%);
 }
 [data-theme='dark'] {
