@@ -50,9 +50,8 @@
   border-radius: 74px;
 }
 .btn-orange-black {
-  background-color: var(--orange);
+  background-color: var(--li);
   color: var(--black);
-
   font-size: 16px;
   line-height: 24px;
 }
