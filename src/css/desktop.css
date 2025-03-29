@@ -102,11 +102,7 @@ main {
   object-fit: cover;
   object-position: 200px;
 }
-.hero .hero__content .hero__content-stars {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 28px;
-}
+/* Title */
 .hero .hero__content .hero__content-title {
   font-family: Roboto;
   font-weight: 700;
@@ -116,6 +112,12 @@ main {
   vertical-align: middle;
   width: 670px;
   margin-bottom: 16px;
+}
+/* Stars */
+.hero .hero__content .hero__content-stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 28px;
 }
 
 .hero .hero__content .hero__content-info {
