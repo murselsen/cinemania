@@ -5,6 +5,9 @@ axios.defaults.headers.common['accept'] = 'application/json';
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 axios.defaults.headers.common['Authorization'] = API_TOKEN;
 
+let weeklyTrends = null;
+let dayTrends = null;
+
 const getWeeklyTrends = () => {
   return new Promise((resolve, reject) => {
     try {
@@ -49,10 +52,6 @@ const getDayTrends = () => {
     }
   });
 };
-
-const weeklyTrends = await getWeeklyTrends();
-const dayTrends = await getDayTrends();
-
 const getMovieVideos = async movieId => {
   return new Promise((resolve, reject) => {
     try {
@@ -75,7 +74,6 @@ const getMovieVideos = async movieId => {
     }
   });
 };
-
 const heroRender = async () => {
   const stars = [
     `<span class="star star-outline"></span>`,
@@ -110,5 +108,10 @@ const heroRender = async () => {
 
   const movieVideos = await getMovieVideos(randomMovie.id);
 };
+document.addEventListener('DOMContentLoaded', async () => {
+  weeklyTrends = await getWeeklyTrends();
+  dayTrends = await getDayTrends();
+  console.log('DOM fully loaded and parsed');
+});
 
 heroRender();
