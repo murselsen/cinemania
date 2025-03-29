@@ -70,6 +70,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
   padding-block: 118px;
   padding-left: 135px;
@@ -78,7 +79,7 @@ main {
     #111111 36.85%,
     rgba(17, 17, 17, 0.5) 60.11%
   );
-  backdrop-filter: blur(5px);
+
   border: 0;
   filter: drop-shadow(2px 4px 6px black);
   box-shadow: 2px 2px 2px 1px black;
