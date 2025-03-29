@@ -41,15 +41,15 @@
   background-image: url('../img/star-outline.svg');
 }
 .btn {
+  font-family: Roboto;
+  font-weight: 500;
   padding: 12px 24px;
   border-radius: 74px;
-  
 }
 .btn-orange-black {
   background-color: var(--orange);
   color: var(--black);
-  font-family: Roboto;
-  font-weight: 500;
+
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
