@@ -69,7 +69,6 @@ main {
 .hero .hero__content {
   position: absolute;
   top: 0;
-  /* align-self: anchor-center; */
   height: 100%;
   padding-block: 118px;
   padding-left: 135px;
