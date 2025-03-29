@@ -2,7 +2,8 @@
   --bg: #fff;
   --orange : #f87719;
   --black : #111111;
-  --dark-blac
+  --dark-grey : #282828;
+  
 }
 [data-theme='dark'] {
   --bg: #000;
