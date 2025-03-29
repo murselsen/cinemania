@@ -30,5 +30,9 @@ const getWeeklyTrends = () => {
     }
   });
 };
+// random number between 0 and 19
+const randomNumber = Math.floor(Math.random() * 20);
+const weeklyTrends = await getWeeklyTrends();
+console.log('weeklyTrends:', weeklyTrends);
 
-const weeklyTrends = getWeeklyTrends();
+
