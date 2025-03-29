@@ -5,8 +5,6 @@ main {
   box-sizing: border-box;
 }
 
-
-
 .container {
   width: 100%;
 }
@@ -138,3 +136,5 @@ main {
   display: flex;
   gap: 14px;
 }
+
+/* Weekly Trends */
