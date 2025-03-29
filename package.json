@@ -1,7 +1,7 @@
 {
   "name": "cinemania",
   "private": true,
-  "version": "1.0.695",
+  "version": "1.0.696",
   "type": "module",
   "scripts": {
     "dev": "vite",
