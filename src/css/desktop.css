@@ -72,11 +72,11 @@ main {
   padding-block: 118px;
   padding-left: 135px;
   background-color: red;
-  /* background: linear-gradient(
+  background: linear-gradient(
     83.16deg,
     #111111 36.85%,
     rgba(17, 17, 17, 0) 60.05%
-  ); */
+  );
 
   filter: drop-shadow(2px 4px 6px black);
 }
@@ -91,7 +91,6 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: blur(2px);
 }
 .hero .hero__content .hero__content-stars {
   display: flex;
