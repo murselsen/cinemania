@@ -7,9 +7,9 @@
   --light-grey: #b7b7b7;
   --light: #f8f8f8;
   --white: #ffffff;
-  --o: #f84119 91.91%;
-  --y: #ffc226 9.4%;
-  --o-y: linear-gradient(141.22deg, var(--y), var(--o) 91.91%);
+  --o: #f84119;
+  --y: #ffc226;
+  --o-y: linear-gradient(141.22deg, var(--y) 9.4%, var(--o) 91.91%);
 }
 [data-theme='dark'] {
   --bg: #000;
