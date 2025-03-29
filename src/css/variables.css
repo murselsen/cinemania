@@ -40,7 +40,9 @@
 .star.star-outline {
   background-image: url('../img/star-outline.svg');
 }
-
+.btn {
+  padding: 12px 24px;
+}
 .btn-orange-black {
   background-color: var(--orange);
   color: var(--black);
@@ -51,5 +53,5 @@
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  padding: 12px 24px;
+   
 }
