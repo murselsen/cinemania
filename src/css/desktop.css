@@ -82,7 +82,8 @@ main {
 }
 
 .hero .hero__content-background {
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .hero .hero__content .hero__content-stars {
