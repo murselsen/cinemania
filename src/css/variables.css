@@ -47,7 +47,7 @@
   border-radius: 74px;
 }
 .btn-orange-black {
-  background-color: var(--linear-o-y);
+  background-color: linear-gradient(141.22deg,var(--linear-o), )
   color: var(--black);
   font-size: 16px;
   line-height: 24px;
