@@ -53,7 +53,7 @@
   font-size: 16px;
   line-height: 24px;
   border: 1px solid var(--linear-y-o);
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s linear;
 }
 
 .btn-orange-black:hover {
