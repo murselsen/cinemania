@@ -5,7 +5,9 @@
   --dark-grey: #282828;
   --grey: #595959;
   --light-grey: #b7b7b7;
-  --light: #
+  --light: #f8f8f8;
+  --white: #ffffff;
+  --li
 }
 [data-theme='dark'] {
   --bg: #000;
