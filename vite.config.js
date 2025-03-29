@@ -3,12 +3,17 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import process from 'process';
 
+// Uygulama adı ve modu
+const appName = process.env.npm_package_name;
+const appMode = process.env.NODE_ENV; // Development or Production
 export default defineConfig(({ command }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    base: appMode === 'development' ? '/' : `/${appName}/`,
     root: 'src',
     build: {
       sourcemap: true,

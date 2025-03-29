@@ -52,6 +52,7 @@ const getDayTrends = () => {
     }
   });
 };
+
 const getMovieVideos = async movieId => {
   return new Promise((resolve, reject) => {
     try {
@@ -74,6 +75,7 @@ const getMovieVideos = async movieId => {
     }
   });
 };
+
 const heroRender = async () => {
   const stars = [
     `<span class="star star-outline"></span>`,
@@ -108,10 +110,10 @@ const heroRender = async () => {
 
   const movieVideos = await getMovieVideos(randomMovie.id);
 };
+
 document.addEventListener('DOMContentLoaded', async () => {
   weeklyTrends = await getWeeklyTrends();
   dayTrends = await getDayTrends();
+  heroRender();
   console.log('DOM fully loaded and parsed');
 });
-
-heroRender();
