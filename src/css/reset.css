@@ -44,4 +44,16 @@ main {
 }
 
 
-.btn-orange-dark
+.btn-orange {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
