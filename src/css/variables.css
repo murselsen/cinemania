@@ -4,6 +4,7 @@
 [data-theme='dark'] {
   --bg: #000;
   --text: #fff;
+  --button
 }
 
 [data-theme='light'] {
