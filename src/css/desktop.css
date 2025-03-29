@@ -65,6 +65,7 @@ main {
   /* box-sizing: content-box; */
   overflow: hidden;
   border: 2px solid #fada;
+  display: flex;
 }
 
 .hero .hero__content {
@@ -75,11 +76,11 @@ main {
   padding-block: 118px;
   padding-left: 135px;
   background: linear-gradient(
-    65.16deg,
-    rgb(17, 17, 17) 60.85%,
-
-    rgba(17, 17, 17, 0.25) 120%
+    83.16deg,
+    #111111 36.85%,
+    rgba(17, 17, 17, 0) 60.05%
   );
+
   filter: drop-shadow(2px 4px 6px black);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
