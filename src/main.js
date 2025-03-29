@@ -53,8 +53,37 @@ const getDayTrends = () => {
 const weeklyTrends = await getWeeklyTrends();
 const dayTrends = await getDayTrends();
 
+const getMovieVideos = async movieId => {
+  return new Promise((resolve, reject) => {
+    try {
+      // url: 'https://api.themoviedb.org/3/movie/movie_id/videos
+
+      axios
+        .get(`https://api.themoviedb.org/3/movie/${movieId}/videos`, {
+          params: { language: 'en-US' },
+        })
+        .then(res => {
+          console.log('Movie Videos:', res);
+          console.log('Movie Videos:', res.data.results);
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    } catch (error) {
+      console.error('getMovieVideos Error:', error);
+      reject(err);
+    }
+  });
+};
+
 const heroRender = async () => {
-  const stars = [];
+  const stars = [
+    `<span class="star star-outline"></span>`,
+    `<span class="star star-outline"></span>`,
+    `<span class="star star-outline"></span>`,
+    `<span class="star star-outline"></span>`,
+    `<span class="star star-outline"></span>`,
+  ];
   const heroTitle = document.querySelector('#hero__content-title');
   const heroStars = document.querySelector('#hero__content-stars');
   const heroInfoText = document.querySelector('#hero__content-info-text');
@@ -64,11 +93,22 @@ const heroRender = async () => {
   // random number between 0 and 19
   const randomNumber = Math.floor(Math.random() * 20);
   const randomMovie = await dayTrends[randomNumber];
+  console.log('Movie:', randomMovie);
+
+  // vote_average
+  const voteAverage = Math.ceil(randomMovie.vote_average / 2);
+  console.log('Vote Average:', voteAverage);
 
   heroPoster.src = `https://image.tmdb.org/t/p/original/${randomMovie.backdrop_path}`;
   heroTitle.textContent =
     randomMovie.original_name || randomMovie.original_title;
   heroInfoText.textContent = randomMovie.overview;
+  for (let i = 0; i < voteAverage; i++) {
+    stars[i] = `<span class="star star"></span>`;
+  }
+  heroStars.innerHTML = stars.join('');
+
+  const movieVideos = await getMovieVideos(randomMovie.id);
 };
 
 heroRender();
