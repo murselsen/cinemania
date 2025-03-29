@@ -63,6 +63,7 @@ main {
   height: 720px;
   box-sizing: border-box;
   border: 1px solid white;
+  display: flex;
 }
 
 .hero .hero__content {
@@ -71,11 +72,11 @@ main {
 
   padding-block: 118px;
   padding-left: 135px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     83.16deg,
     #111111 36.85%,
     rgba(17, 17, 17, 0) 60.05%
-  );
+  ); */
 
   filter: drop-shadow(2px 4px 6px black);
 }
