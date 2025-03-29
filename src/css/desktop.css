@@ -63,10 +63,12 @@ main {
   height: 720px;
   box-sizing: border-box;
   border: 1px solid white;
+  overflow: hidden;
 }
 
 .hero .hero__content {
   position: absolute;
+  top: 0;
   /* align-self: anchor-center; */
   height: 100%;
   padding-block: 118px;
