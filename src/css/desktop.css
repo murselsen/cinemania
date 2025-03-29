@@ -67,8 +67,8 @@ main {
 
 .hero .hero__content {
   position: absolute;
-  align-self: anchor-center;
-  
+  /* align-self: anchor-center; */
+  height: 100%;
   padding-block: 118px;
   padding-left: 135px;
   background-color: red;
