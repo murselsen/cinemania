@@ -8,7 +8,7 @@
   --light: #f8f8f8;
   --white: #ffffff;
   --o: #f84119;
-  --linear-y: #ffc226;
+  --y: #ffc226;
 }
 [data-theme='dark'] {
   --bg: #000;
@@ -48,7 +48,7 @@
 .btn-orange-black {
   background-color: linear-gradient(
     141.22deg,
-    var(--linear-o) 9.4%,
+    #f84119 9.4%,
     var(--linear-y) 91.91%
   );
   color: var(--black);
