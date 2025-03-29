@@ -66,10 +66,6 @@ main {
 }
 
 .hero .hero__content {
-  /* position: absolute;
-  left: 0;
-  top: 0; */
-  height: 100%;
   padding-block: 118px;
   padding-left: 135px;
   background: linear-gradient(
