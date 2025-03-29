@@ -30,10 +30,21 @@ const getWeeklyTrends = () => {
     }
   });
 };
-// random number between 0 and 19
-const randomNumber = Math.floor(Math.random() * 20);
 const weeklyTrends = await getWeeklyTrends();
 console.log('weeklyTrends:', weeklyTrends);
 
-const randomMovie = weeklyTrends[randomNumber];
-console.log('randomMovie:', randomMovie);
+const heroRender = () => {
+  const heroTitle = document.querySelector('#hero__content-title');
+  const heroStars = document.querySelector('#hero__content-stars');
+  const heroInfoText = document.querySelector('#hero-content-info-text');
+  const heroButtonArea = document.querySelector('#hero-content-button-area');
+  const heroPoster = document.querySelector("#hero__content-background-image");
+  
+  // random number between 0 and 19
+  const randomNumber = Math.floor(Math.random() * 20);
+  console.log('randomNumber:', randomNumber);
+  const randomMovie = weeklyTrends[randomNumber];
+  console.log('randomMovie:', randomMovie);
+};
+
+heroRender();
