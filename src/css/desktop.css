@@ -76,9 +76,9 @@ main {
   padding-left: 135px;
   background: linear-gradient(
     83.06deg,
-    #111111 30.85%,
+    #111111 35.85%,
     #1111117e 50.85%,
-    rgba(17, 17, 17, 0.5) 40.11%
+    rgba(17, 17, 17, 0.2) 40.11%
   );
 
   border: 0;
