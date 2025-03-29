@@ -66,6 +66,7 @@ main {
 }
 
 .hero .hero__content {
+  position: absolute;
   height: auto;
   padding-block: 118px;
   padding-left: 135px;
