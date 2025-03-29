@@ -56,7 +56,8 @@
 }
 
 .btn-orange-black:hover {
-  background: var(--linear-o-y);
+  
+  background: var(--linear-y-o);
 }
 
 .btn-black-white {
