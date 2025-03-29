@@ -142,3 +142,8 @@ main {
   border: 1px solid white;
   margin: 80px 32px 60px 32px;
 }
+.stand__area .stand__area-header {
+  display: flex;
+  justify-content: space-between;
+}
+
