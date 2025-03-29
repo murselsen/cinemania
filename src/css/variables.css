@@ -1,7 +1,8 @@
 :root {
   --bg: #fff;
   --orange : #f87719;
-  --
+  --black : #111111;
+  --dark-blac
 }
 [data-theme='dark'] {
   --bg: #000;
