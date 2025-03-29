@@ -105,6 +105,7 @@ main {
 .hero .hero__content .hero__content-stars {
   display: flex;
   gap: 5px;
+  margin-bottom: 28px;
 }
 .hero .hero__content .hero__content-title {
   font-family: Roboto;
@@ -115,13 +116,7 @@ main {
   vertical-align: middle;
   width: 670px;
   margin-bottom: 16px;
-
 }
-
-.hero .hero__content .hero__conntent_stars {
-}
-
-
 
 .hero .hero__content .hero__content-info {
   max-width: 370px;
