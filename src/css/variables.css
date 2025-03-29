@@ -4,7 +4,7 @@
 [data-theme='dark'] {
   --bg: #000;
   --text: #fff;
-  --button
+  --button-bg: #000;
 }
 
 [data-theme='light'] {
