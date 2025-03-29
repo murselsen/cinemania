@@ -82,7 +82,7 @@ main {
 }
 
 .hero .hero__content-background {
-  height: 520px;
+  height: 100%;
   width: 100%;
 }
 
