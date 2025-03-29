@@ -54,6 +54,11 @@
   line-height: 24px;
   border: 1px solid var(--linear-y-o);
 }
+
+.btn-orange-black:hover{
+ background: var(--linear-o-y);
+}
+
 .btn-black-white {
   background: var(--black);
   color: var(--white);
