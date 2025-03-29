@@ -67,7 +67,7 @@ main {
 }
 
 .hero .hero__content {
-  height: 100%;
+  height: auto;
   border: 1px solid white;
 
   padding-block: 118px;
