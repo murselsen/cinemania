@@ -3,9 +3,8 @@ import { getWeeklyTrends } from './tmdb.js';
 const weeklyTrendsList = document.querySelector('#weekly-trends-list');
 
 getWeeklyTrends().then(res => {
-  console.log('Weekly Trends:', res);
-  for (let index = 0; index < 2; index++) {
-    const element = array[index];
+  for (let index = 0; index < 3; index++) {
+    console.log('res[index]:, res[index]);
   }
 });
 
