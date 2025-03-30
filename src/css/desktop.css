@@ -170,4 +170,21 @@ main {
 /* Stand Arera - Weekly Trends List */
 .stand__area .stand__area-list {
   display: flex;
+  gap: 16px;
+  height: 574px;
+}
+
+.stand__area .stand__area-list .stand__area-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stand__area .stand__area-list .stand__area-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
