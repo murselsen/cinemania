@@ -28,6 +28,7 @@ getWeeklyTrends().then(res => {
   for (let index = 0; index < 3; index++) {
     const film = res[index];
     console.log('Film:', film);
+    console.log('Film Date Year:', String(film.release_date).split('-')[0]);
     const filmData = {
       name: film.original_name || film.original_title,
       poster_path: film.poster_path,
