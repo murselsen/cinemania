@@ -7,13 +7,15 @@ getWeeklyTrends().then(res => {
     const film = res[index];
     console.log('Film:', film);
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
-            <img src="https://image.tmdb.org/t/p/original/${film.backdrop_path
-      }" alt="GHOSTED" title="GHOSTED">
+            <img src="https://image.tmdb.org/t/p/original/${
+              film.poster_path
+            }" alt="GHOSTED" title="GHOSTED">
             <div class="stand__area-item-content">
-              <h3 class="stand__area-item-title">${film.original_name || film.original_title
-      }</h3>
+              <h3 class="stand__area-item-title">${
+                film.original_name || film.original_title
+              }</h3>
               <div class="stand__area-item-content-footer">
-                <p class="stand__area-item-info">${film.} | 2023</p>
+                <p class="stand__area-item-info"> | 2023</p>
                 <span class="stand__area-item-rating">
                   <span class="star star"></span>
                   <span class="star star"></span>
