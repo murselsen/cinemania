@@ -28,7 +28,7 @@
 .star {
   width: 24px;
   height: 24px;
-  display: block;
+  display: inline-block;
   background-repeat: no-repeat;
 }
 .star.star {
