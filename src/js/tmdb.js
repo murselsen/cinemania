@@ -61,9 +61,8 @@ export const getMovieVideos = async movieId => {
         })
         .then(res => {
           console.log('Movie Videos:', res);
-          console.log('Movie Videos:', res.data.results);
 
-          
+          resolve(res.data);
         })
         .catch(err => {
           console.error(err);

@@ -141,6 +141,9 @@ main {
 .stand__area {
   border: 1px solid white;
   margin: 80px 32px 60px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 .stand__area .stand__area-header {
   display: flex;
@@ -162,4 +165,9 @@ main {
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--orange);
+}
+
+/* Stand Arera - Weekly Trends List */
+.stand__area .stand__area-list {
+  display: flex;
 }
