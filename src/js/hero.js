@@ -22,13 +22,10 @@ export const heroRender = async () => {
 
     getDayTrends()
       .then(async res => {
-        console.log('getDayTrends res:', res);
         const randomMovie = res[randomNumber];
-
 
         // vote_average
         const voteAverage = Math.ceil(randomMovie.vote_average / 2);
-        console.log('Vote Average:', voteAverage);
 
         heroPoster.src = `https://image.tmdb.org/t/p/original/${randomMovie.backdrop_path}`;
         heroTitle.textContent =

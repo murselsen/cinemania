@@ -60,8 +60,6 @@ export const getMovieVideos = async movieId => {
           params: { language: 'en-US' },
         })
         .then(res => {
-          console.log('Movie Videos:', res);
-
           resolve(res.data);
         })
         .catch(err => {
