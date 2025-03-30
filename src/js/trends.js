@@ -31,7 +31,9 @@ getWeeklyTrends().then(res => {
     const filmData = {
       name: film.original_name || film.original_title,
       poster_path: film.poster_path,
-      year: 1,
+      year:
+        String(film.first_air_date).split('-')[0]) ||
+        String(film.release_date).split('-')[0],
       tags: film.genre_ids
         .map(genreId => genreMap[genreId] || 'Unknown')
         .flat(),
@@ -40,7 +42,8 @@ getWeeklyTrends().then(res => {
     console.log('Film Data:', filmData);
     console.log(
       'Film Release Date:',
-      String(film.first_air_date.split('-')[]) || String(film.release_date).split('-')[0],
+      String(film.first_air_date.split('-')[0]) ||
+        String(film.release_date).split('-')[0],
       typeof film.release_date
     );
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
