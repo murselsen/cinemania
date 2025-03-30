@@ -17,11 +17,13 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav .nav__logo {
   display: flex;
   gap: 8px;
   align-items: center;
 }
+
 .nav .nav__logo .nav__logo-text {
   font-family: Roboto;
   font-weight: 400;
@@ -49,6 +51,7 @@ main {
   vertical-align: middle;
   text-transform: uppercase;
 }
+
 .nav .nav__menu .nav__menu-link:hover {
   color: orange;
 }
@@ -73,13 +76,11 @@ main {
   height: 100%;
   padding-block: 118px;
   padding-left: 135px;
-  background: linear-gradient(
-    83.06deg,
-    #111111 35.85%,
-    #1111117e 50.85%,
-    #11111137 60.11%,
-    rgba(17, 17, 17, 0.2) 40.11%
-  );
+  background: linear-gradient(83.06deg,
+      #111111 35.85%,
+      #1111117e 50.85%,
+      #11111137 60.11%,
+      rgba(17, 17, 17, 0.2) 40.11%);
 
   filter: drop-shadow(2px 4px 6px black);
   box-shadow: 2px 2px 2px 1px black;
@@ -100,6 +101,7 @@ main {
   object-fit: cover;
   object-position: 200px;
 }
+
 /* Hero Title */
 .hero .hero__content .hero__content-title {
   font-family: Roboto;
@@ -111,16 +113,19 @@ main {
   width: 670px;
   margin-bottom: 16px;
 }
+
 /* Hero Stars */
 .hero .hero__content .hero__content-stars {
   display: flex;
   gap: 5px;
   margin-bottom: 28px;
 }
+
 /*  Hero Information */
 .hero .hero__content .hero__content-info {
   max-width: 370px;
 }
+
 .hero .hero__content .hero__content-info .hero__content-info-text {
   font-family: Roboto;
   font-weight: 400;
@@ -130,6 +135,7 @@ main {
   vertical-align: middle;
   margin-bottom: 36px;
 }
+
 .hero .hero__content .hero__content-info .hero__content-info-buttons {
   display: flex;
   gap: 14px;
@@ -142,6 +148,7 @@ main {
   flex-direction: column;
   gap: 28px;
 }
+
 .stand__area .stand__area-header {
   display: flex;
   justify-content: space-between;
@@ -155,6 +162,7 @@ main {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+
 .stand__area .stand__area-header .stand__area-header-link {
   font-family: Roboto;
   font-weight: 500;
@@ -184,4 +192,39 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.stand__area .stand__area-list .stand__area-item .stand__area-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stand__area .stand__area-list .stand__area-item .stand__area-item-content .stand__area-item-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.stand__area .stand__area-list .stand__area-item .stand__area-item-content .stand__area-item-content-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stand__area .stand__area-list .stand__area-item .stand__area-item-content .stand__area-item-content-footer .stand__area-item-info {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--light-grey)
 }

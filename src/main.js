@@ -1,6 +1,5 @@
 import { heroRender } from './js/hero.js';
-import { getWeeklyTrends, getDayTrends } from './js/tmdb.js';
-
+import './js/trends.js';
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     heroRender();
