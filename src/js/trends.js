@@ -28,7 +28,6 @@ getWeeklyTrends().then(res => {
   for (let index = 0; index < 3; index++) {
     const film = res[index];
     console.log('Film:', film);
-    console.log('Film Date Year:', film.release_date);
     const filmData = {
       name: film.original_name || film.original_title,
       poster_path: film.poster_path,
@@ -39,6 +38,7 @@ getWeeklyTrends().then(res => {
     };
 
     console.log('Film Data:', filmData);
+    console.log('Film Release Date:', film.release_date);
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
             <img src="https://image.tmdb.org/t/p/original/${
               film.poster_path
