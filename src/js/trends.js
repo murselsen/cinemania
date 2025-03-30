@@ -31,21 +31,14 @@ getWeeklyTrends().then(res => {
     const filmData = {
       name: film.original_name || film.original_title,
       poster_path: film.poster_path,
-      year:
-        String(film.first_air_date).split('-')[0]) ||
-        String(film.release_date).split('-')[0],
+      date: film.first_air_date || film.release_date,
       tags: film.genre_ids
         .map(genreId => genreMap[genreId] || 'Unknown')
         .flat(),
     };
 
     console.log('Film Data:', filmData);
-    console.log(
-      'Film Release Date:',
-      String(film.first_air_date.split('-')[0]) ||
-        String(film.release_date).split('-')[0],
-      typeof film.release_date
-    );
+    console.log()
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
             <img src="https://image.tmdb.org/t/p/original/${
               film.poster_path
