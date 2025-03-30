@@ -38,9 +38,9 @@ export const heroRender = async () => {
         for (let i = 0; i < voteAverage; i++) {
           stars[i] = `<span class="star star"></span>`;
         }
-        heroStars.in_nerHTML = stars.join('');
+        heroStars.innerHTML = stars.join('');
 
-        const movieVideos = await getMovieVideos(randomMovie.id);
+        getMovieVideos(randomMovie.id);
       })
       .catch(err => {
         console.error('Error fetching daily trends:', err);
