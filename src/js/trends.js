@@ -40,7 +40,7 @@ getWeeklyTrends().then(res => {
     console.log('Film Data:', filmData);
     console.log(
       'Film Release Date:',
-      ||film.release_date.split('-')[0],
+      String(film.first_air_date.split('-')[]) || String(film.release_date).split('-')[0],
       typeof film.release_date
     );
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
