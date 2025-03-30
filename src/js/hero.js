@@ -25,7 +25,6 @@ export const heroRender = async () => {
         console.log('getDayTrends res:', res);
         const randomMovie = res[randomNumber];
 
-        console.log('Movie:', randomMovie);
 
         // vote_average
         const voteAverage = Math.ceil(randomMovie.vote_average / 2);

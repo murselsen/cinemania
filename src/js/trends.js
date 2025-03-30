@@ -4,7 +4,7 @@ const weeklyTrendsList = document.querySelector('#weekly-trends-list');
 
 getWeeklyTrends().then(res => {
   for (let index = 0; index < 3; index++) {
-    console.log('res[index]:, res[index]);
+    console.log(index, res[index]);
   }
 });
 
