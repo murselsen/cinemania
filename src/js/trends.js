@@ -64,8 +64,8 @@ getWeeklyTrends().then(res => {
     stand_content_footer.classList.add('stand__area-item-content-footer');
 
     const stand_info = document.createElement('p');
-
-
+    stand_info.classList.add('stand__area-item-info');
+    stand_info.textContent = ``;
 
     stand_content.appendChild(stand_content_footer);
     stand_item.appendChild(stand_content);
