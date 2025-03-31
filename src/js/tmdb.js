@@ -82,7 +82,12 @@ export const getUpcomingMovies = () => {
 };
 
 export const getMovieDetails = async movieId => {
-  return
+  return new Promise((resolve, reject) => {
+    try {
+    } catch (error) {
+      console.error('getMovieDetails Error:', error);
+    }
+  });
 };
 
 export const searchMovies = async query => {};
