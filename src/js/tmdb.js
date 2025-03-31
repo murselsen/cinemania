@@ -75,7 +75,7 @@ export const getMovieVideos = async movieId => {
 export const getMovieList = async (type, page) => {
   return new Promise((resolve, reject) => {
     try {
-      axios.get
+      axios.get('')
     } catch (error) {
       console.error('getMovieList Error:', error);
 
