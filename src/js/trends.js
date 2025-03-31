@@ -27,16 +27,12 @@ const genreMap = {
 getWeeklyTrends().then(res => {
   for (let index = 0; index < 3; index++) {
     const film = res[index];
-    const filmData = {
-      name: film.original_name || film.original_title,
-      poster_path: film.poster_path,
-      date: film.first_air_date || film.release_date,
-      tags: film.genre_ids
-        .map(genreId => genreMap[genreId] || 'Unknown')
-        .flat(1),
-    };
 
+    const date = film.first_air_date || film.release_date;
     const voteAverage = Math.ceil(film.vote_average / 2);
+    const tags = film.genre_ids
+      .map(genreId => genreMap[genreId] || 'Unknown')
+      .flat(1);
     // li
     const stand_item = document.createElement('li');
     stand_item.classList.add('stand__area-item');
@@ -62,7 +58,8 @@ getWeeklyTrends().then(res => {
 
     const stand_info = document.createElement('p');
     stand_info.classList.add('stand__area-item-info');
-    stand_info.textContent = filmData.tags.join(', ');
+    stand_info.textContent =
+      filmData.tags.join(', ') + ' | ' + date.split('-')[0];
 
     stand_content_footer.appendChild(stand_info);
 
