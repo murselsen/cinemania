@@ -34,15 +34,23 @@ getWeeklyTrends().then(res => {
       date: film.first_air_date || film.release_date,
       tags: film.genre_ids
         .map(genreId => genreMap[genreId] || 'Unknown')
-        .flat(),
+        .flat(1),
     };
 
     console.log('Film Data:', filmData);
     console.log('Film Date: ', filmData.date.split('-')[0]);
+
+    const stand_item = document.createElement('li');
+    stand_item.classList.add('stand__area-item');
+/*
+
+
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
             <img src="https://image.tmdb.org/t/p/original/${
               film.poster_path
-            }" alt="GHOSTED" title="GHOSTED">
+            }" alt="${film.original_name || film.original_title}" title="${
+      film.original_name || film.original_title
+    }">
             <div class="stand__area-item-content">
               <h3 class="stand__area-item-title">${
                 film.original_name || film.original_title
@@ -60,7 +68,7 @@ getWeeklyTrends().then(res => {
                 </span>
               </div>
             </div>
-          </li>`;
+          </li>`; */
   }
 });
 

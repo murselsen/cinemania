@@ -205,6 +205,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.48%, rgba(0, 0, 0, 0.9) 92.16%);
 }
 
 .stand__area .stand__area-list .stand__area-item .stand__area-item-content .stand__area-item-title {
