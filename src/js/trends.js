@@ -27,7 +27,6 @@ const genreMap = {
 getWeeklyTrends().then(res => {
   for (let index = 0; index < 3; index++) {
     const film = res[index];
-    console.log('-----------------------------\nFilm:', film);
     const filmData = {
       name: film.original_name || film.original_title,
       poster_path: film.poster_path,
@@ -37,9 +36,7 @@ getWeeklyTrends().then(res => {
         .flat(1),
     };
 
-    console.log('Film Data:', filmData);
-    console.log('Film Date: ', filmData.date.split('-')[0]);
-
+    const voteAverage = Math.ceil(film.vote_average / 2);
     // li
     const stand_item = document.createElement('li');
     stand_item.classList.add('stand__area-item');
@@ -65,34 +62,27 @@ getWeeklyTrends().then(res => {
 
     const stand_info = document.createElement('p');
     stand_info.classList.add('stand__area-item-info');
-    stand_info.textContent = ``;
+    stand_info.textContent = filmData.tags.join(', ');
 
+    stand_content_footer.appendChild(stand_info);
+
+    const stand_rating = document.createElement('div');
+    stand_rating.classList.add('stand__area-item-rating');
+    const stars = [
+      `<span class="star star-outline"></span>`,
+      `<span class="star star-outline"></span>`,
+      `<span class="star star-outline"></span>`,
+      `<span class="star star-outline"></span>`,
+      `<span class="star star-outline"></span>`,
+    ];
+    for (let i = 0; i < voteAverage; i++) {
+      stars[i] = `<span class="star star"></span>`;
+    }
+    stand_rating.innerHTML = stars.join('');
+    stand_content_footer.appendChild(stand_rating);
     stand_content.appendChild(stand_content_footer);
     stand_item.appendChild(stand_content);
     weeklyTrendsList.appendChild(stand_item);
-    /*
-
-
-    weeklyTrendsList.innerHTML += `<li class="stand__area-item">
-
-            <div class="stand__area-item-content">
-              <h3 class="stand__area-item-title">${
-                film.original_name || film.original_title
-              }</h3>
-              <div class="stand__area-item-content-footer">
-                <p class="stand__area-item-info"> | ${
-                  filmData.date.split('-')[0]
-                }</p>
-                <span class="stand__area-item-rating">
-                  <span class="star star"></span>
-                  <span class="star star"></span>
-                  <span class="star star"></span>
-                  <span class="star star"></span>
-                  <span class="star star"></span>
-                </span>
-              </div>
-            </div>
-          </li>`; */
   }
 });
 

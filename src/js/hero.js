@@ -36,10 +36,12 @@ export const heroRender = async () => {
         }
         heroStars.innerHTML = stars.join('');
 
+        console.log('Hero Movie:', randomMovie, randomMovie.id);
+
         getMovieVideos(randomMovie.id);
       })
       .catch(err => {
-        console.error('Error fetching daily trends:', err);
+        console.error('Error fetching daily trends:', err)
       });
   } catch (error) {
     console.error('Error in heroRender:', error);
