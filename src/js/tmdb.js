@@ -75,10 +75,14 @@ export const getMovieVideos = async movieId => {
 export const getMovieList = async (type, page) => {
   return new Promise((resolve, reject) => {
     try {
-      axios.get('')
+      axios
+        .get('https://api.themoviedb.org/3/genre/movie/list')
+        .then(res => {
+          console.log('getMovieGenre:', res);
+        })
+        .catch(err => console.error(err));
     } catch (error) {
       console.error('getMovieList Error:', error);
-
     }
   });
 };
@@ -102,3 +106,5 @@ export const getMovieDetails = async movieId => {
 };
 
 export const searchMovies = async query => {};
+
+ 
