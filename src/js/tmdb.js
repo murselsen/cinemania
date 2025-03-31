@@ -81,4 +81,8 @@ export const getUpcomingMovies = () => {
   });
 };
 
-export const searchMovie = async query => { });
+export const getMovieDetails = async movieId => {
+  return
+};
+
+export const searchMovies = async query => {};
