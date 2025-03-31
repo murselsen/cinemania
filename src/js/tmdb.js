@@ -72,6 +72,10 @@ export const getMovieVideos = async movieId => {
   });
 };
 
+export const getMovieList = async (type, page) => {
+  return new Promise((resolve, reject) => { });
+};
+
 export const getUpcomingMovies = () => {
   return new Promise((resolve, reject) => {
     try {
