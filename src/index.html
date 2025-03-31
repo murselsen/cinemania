@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemania</title>
+    <meta
+      name="description"
+      content="Cinemania - Your go-to source for movie and TV show information."
+    />
+    <meta
+      name="keywords"
+      content="movies, TV shows, reviews, ratings, trailers"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cinemania</title>
-  <meta name="description" content="Cinemania - Your go-to source for movie and TV show information." />
-  <meta name="keywords" content="movies, TV shows, reviews, ratings, trailers" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body>
+    <load src="partials/header.html" />
 
-é
+    <main>
+      <div class="container">
+        <!-- Hero -->
+        <load src="partials/hero.html" />
+        <!-- Weekly Trends - Film Stand -->
+        <section class="stand__area">
+          <div class="stand__area-header">
+            <h2 class="stand__area-header-title">Weekly Trends</h2>
+            <a class="stand__area-header-link" href="/catalog.html">See all</a>
+          </div>
+          <ul class="stand__area-list" id="weekly-trends-list"></ul>
+        </section>
 
-<body>
-  <load src="partials/header.html" />
+        <section class="stand__area">
+          <div class="stand__area-header">
+            <h2 class="stand__area-header-title">Upcoming this month</h2>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  <main>
-    <div class="container">
-      <!-- Hero -->
-      <load src="partials/hero.html" />
-      <!-- Weekly Trends - Film Stand -->
-      <section class="stand__area">
-        <div class="stand__area-header">
-          <h2 class="stand__area-header-title">Weekly Trends</h2>
-          <a class="stand__area-header-link" href="/catalog.html">See all</a>
-        </div>
-        <ul class="stand__area-list" id="weekly-trends-list"></ul>
-      </section>
-
-      <section class="stand__area">
-        <div class="stand__area-header">
-          <h2 class="stand__area-header-title">Upcoming this month</h2>
-        </div>
-      </section>
-    </div>
-  </main>
-
-
-
-  <script type="module" src="./main.js"></script>
-</body>
-
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
