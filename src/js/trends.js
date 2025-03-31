@@ -47,10 +47,12 @@ getWeeklyTrends().then(res => {
     // img
     const stand_img = document.createElement('img');
     stand_img.src = `https://image.tmdb.org/t/p/original/${film.poster_path}`;
+    stand_img.alt = film.original_name || film.original_title;
+    stand_img.title = film.original_name || film.original_title;
+    stand
 
-
-    
-
+    stand_item.appendChild(stand_img);
+    weeklyTrendsList.appendChild(stand_item);
     /*
 
 
