@@ -80,3 +80,5 @@ export const getUpcomingMovies = () => {
     }
   });
 };
+
+export const searchMovie = async query => { });
