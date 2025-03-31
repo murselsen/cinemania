@@ -46,9 +46,12 @@ getWeeklyTrends().then(res => {
 
     // img
     const stand_img = document.createElement('img');
-    stand_img
+    stand_img.src = `https://image.tmdb.org/t/p/original/${film.poster_path}`;
 
-/*
+
+    
+
+    /*
 
 
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
