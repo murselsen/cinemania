@@ -40,8 +40,11 @@ getWeeklyTrends().then(res => {
     console.log('Film Data:', filmData);
     console.log('Film Date: ', filmData.date.split('-')[0]);
 
+    // li
     const stand_item = document.createElement('li');
     stand_item.classList.add('stand__area-item');
+
+
 /*
 
 
