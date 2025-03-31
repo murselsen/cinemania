@@ -44,6 +44,9 @@ getWeeklyTrends().then(res => {
     const stand_item = document.createElement('li');
     stand_item.classList.add('stand__area-item');
 
+    // img
+    const stand_img = document.createElement('img');
+    stand_img
 
 /*
 
