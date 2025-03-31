@@ -43,25 +43,38 @@ getWeeklyTrends().then(res => {
     // li
     const stand_item = document.createElement('li');
     stand_item.classList.add('stand__area-item');
+    stand_item.style.cursor = 'pointer';
 
     // img
     const stand_img = document.createElement('img');
     stand_img.src = `https://image.tmdb.org/t/p/original/${film.poster_path}`;
     stand_img.alt = film.original_name || film.original_title;
     stand_img.title = film.original_name || film.original_title;
-    stand
-
     stand_item.appendChild(stand_img);
+
+    const stand_content = document.createElement('div');
+    stand_content.classList.add('stand__area-item-content');
+
+    const stand_title = document.createElement('h3');
+    stand_title.classList.add('stand__area-item-title');
+    stand_title.textContent = film.original_name || film.original_title;
+    stand_content.appendChild(stand_title);
+
+    const stand_content_footer = document.createElement('div');
+    stand_content_footer.classList.add('stand__area-item-content-footer');
+
+    const stand_info = document.createElement('p');
+
+
+
+    stand_content.appendChild(stand_content_footer);
+    stand_item.appendChild(stand_content);
     weeklyTrendsList.appendChild(stand_item);
     /*
 
 
     weeklyTrendsList.innerHTML += `<li class="stand__area-item">
-            <img src="https://image.tmdb.org/t/p/original/${
-              film.poster_path
-            }" alt="${film.original_name || film.original_title}" title="${
-      film.original_name || film.original_title
-    }">
+
             <div class="stand__area-item-content">
               <h3 class="stand__area-item-title">${
                 film.original_name || film.original_title
