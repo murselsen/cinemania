@@ -58,8 +58,7 @@ getWeeklyTrends().then(res => {
 
     const stand_info = document.createElement('p');
     stand_info.classList.add('stand__area-item-info');
-    stand_info.textContent =
-      filmData.tags.join(', ') + ' | ' + date.split('-')[0];
+    stand_info.textContent = tags.join(', ') + ' | ' + date.split('-')[0];
 
     stand_content_footer.appendChild(stand_info);
 
