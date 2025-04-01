@@ -1,6 +1,5 @@
 import { getWeeklyTrends } from './tmdb.js';
 const weeklyTrendsList = document.querySelector('#weekly-trends-list');
-const catalogList = document.querySelector('#catalog-list');
 const genreMap = {
   28: 'Action',
   12: 'Adventure',
@@ -85,12 +84,4 @@ getWeeklyTrends().then(res => {
 
     weeklyTrendsList.appendChild(item);
   }
-});
-
-getWeeklyTrends().then(res => {
-  res.forEach(element => {
-    let catalogItem = renderCatalogTrends(element);
-    console.log(catalogItem);
-    catalogList.appendChild(catalogItem);
-  });
 });

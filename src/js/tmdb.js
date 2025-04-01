@@ -90,9 +90,16 @@ export const getMovieList = async (type, page) => {
 export const getUpcomingMovies = () => {
   return new Promise((resolve, reject) => {
     try {
-
-
-      
+      axios
+        .get('https://api.themoviedb.org/3/movie/upcoming', {
+          language: 'en-US',
+          page: 1,
+        })
+        .then(res => {
+          console.log('getUpcomingMovies:', res);
+          resolve(res.data);
+        })
+        .catch(err => console.error(err));
     } catch (error) {
       console.error('getUpcomingMovies Error:', error);
     }
@@ -109,5 +116,3 @@ export const getMovieDetails = async movieId => {
 };
 
 export const searchMovies = async query => {};
-
-
