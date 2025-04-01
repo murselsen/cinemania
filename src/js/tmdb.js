@@ -90,6 +90,9 @@ export const getMovieList = async (type, page) => {
 export const getUpcomingMovies = () => {
   return new Promise((resolve, reject) => {
     try {
+
+
+      
     } catch (error) {
       console.error('getUpcomingMovies Error:', error);
     }
@@ -107,4 +110,4 @@ export const getMovieDetails = async movieId => {
 
 export const searchMovies = async query => {};
 
- 
+

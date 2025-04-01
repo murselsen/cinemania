@@ -177,11 +177,12 @@ main {
   display: flex;
   gap: 16px;
   height: 574px;
+  flex-wrap: wrap;
 }
 
 .stand__area .stand__area-list .stand__area-item {
   position: relative;
-  width: 100%;
+  flex: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
