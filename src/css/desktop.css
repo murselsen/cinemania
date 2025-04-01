@@ -239,3 +239,11 @@ main {
   display: flex;
 
 }
+
+.stand__area .stand__area-upcoming .stand__area-upcoming-image {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stand__area-upcoming-info
