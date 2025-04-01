@@ -244,6 +244,14 @@ main {
   width: 75%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
-.stand__area-upcoming-info
+.stand__area .stand__area-upcoming .stand__area-upcoming-info {
+  width: 25%;
+  padding: 0px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

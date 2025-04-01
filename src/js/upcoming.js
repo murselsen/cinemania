@@ -13,6 +13,9 @@ export const upComingRender = async film => {
     // UpComing Info Area
     const upcomingInfoArea = document.createElement('div');
     upcomingInfoArea.classList.add('stand__area-upcoming-info');
+    upcomingInfoArea.innerHTML = `asdasd`;
+
+    stand__areaUpcoming.appendChild(upcomingInfoArea);
   } catch (error) {
     console.error('Error in upcomingRender:', error);
   }
