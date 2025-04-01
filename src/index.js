@@ -7,12 +7,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     heroRender();
 
     getUpcomingMovies().then(data => {
-
       const randomIndex = Math.floor(Math.random() * data.results.length);
-      console.log(data.results[randomIndex]);
-      upComingRender();
+      upComingRender(data.results[randomIndex]);
     });
-
   } catch (error) {
     console.error('Error loading data in DOMContentLoaded event:', error);
   }

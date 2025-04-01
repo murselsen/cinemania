@@ -233,3 +233,9 @@ main {
   letter-spacing: 0%;
   color: var(--light-grey)
 }
+
+
+.stand__area .stand__area-upcoming {
+  display: flex;
+
+}
