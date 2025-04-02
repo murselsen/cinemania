@@ -308,3 +308,12 @@ main {
   letter-spacing: 0%;
   color: #b7b7b7;
 }
+
+.stand__area
+  .stand__area-upcoming
+  .stand__area-upcoming-info
+  .stand__area-upcoming-table
+  tr
+  td.date {
+  color: var(--orange);
+}
