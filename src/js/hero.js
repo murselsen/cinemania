@@ -1,5 +1,5 @@
 import { getDayTrends, getMovieVideos } from './tmdb.js';
-
+/* @murselsen */
 export const heroRender = async () => {
   try {
     const stars = [
